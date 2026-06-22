@@ -1,0 +1,24 @@
+{
+ "el_n": 24,
+ "el_r": 0.515,
+ "el_cv": 0.465,
+ "el_ci": [
+  0.477,
+  0.711
+ ],
+ "el_mean_int": 3.14,
+ "el_min": 0.75,
+ "el_max": 6.0,
+ "el_sig_poisson": 1.91,
+ "el_sig_goe": -0.2,
+ "la_n": 18,
+ "la_r": 0.522,
+ "la_cv": 0.6,
+ "la_sig_poisson": 1.73,
+ "unfolded_r": 0.515,
+ "ref": {
+  "poisson": 0.386,
+  "goe": 0.531,
+  "gue": 0.603
+ }
+}
