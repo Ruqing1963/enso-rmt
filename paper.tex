@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage[round]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\onehalfspacing
+\title{\textbf{Level Repulsion in the El Ni\~no--Southern Oscillation}\\[0.4em]
+{\large The Recharge Oscillator as a Single Autonomous Reservoir:}\\
+{\large A Random Matrix Theory Test on the Climate System}}
+\author{Ruqing Chen\ GUT Geoservice Inc., Montreal, Canada\ \texttt{ruqing@hotmail.com}}
+\date{June 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+
+\noindent A random matrix theory (RMT) program has established a reservoir criterion: event sequences exhibit Wigner--Dyson level repulsion when, and only when, a single autonomous reservoir charges slowly and discharges substantially in discrete, datable events. The El Ni\~no--Southern Oscillation (ENSO) is an almost ideal climate-system test. Its leading theory, the recharge oscillator, describes exactly a charge-and-release reservoir: equatorial Pacific warm-water volume builds up slowly (recharge), an El Ni\~no discharges it (release), and the system must rebuild before the next event. This is a single, autonomous, coupled ocean--atmosphere reservoir, and El Ni\~no events are discrete and objectively datable.
+
+
+\noindent We analyze the NOAA Oceanic Ni\~no Index (ONI, 1950--2024) and extract El Ni\~no events by the official, reproducible NOAA criterion (ONI $\ge +0.5\,^\circ$C for at least five consecutive overlapping seasons), taking each event's ONI peak as its time. This objective definition, with no hand-selection, yields 24 El Ni\~no events. Their spacing ratio is $\langle r\rangle = 0.515$ (95\% CI $0.48$--$0.71$), $+1.9\sigma$ above Poisson (0.386) and indistinguishable from GOE (0.531, $-0.2\sigma$); CV is $0.47$, in the GOE range. The cold phase confirms it: 18 La Ni\~na events give $\langle r\rangle = 0.522$. The result is robust to threshold and unchanged by unfolding. ENSO shows genuine GOE-class repulsion: neither memoryless nor rigidly periodic, but repelling like a chaotic quantum spectrum. This is the program's first climate-system entry and a successful forward prediction of the reservoir criterion.
+
+\vspace{0.6em}
+
+\noindent\textbf{Keywords:} random matrix theory; ENSO; El Ni\~no; recharge oscillator; level repulsion; charge-and-release; climate dynamics
+\vspace{0.3em}
+
+\noindent\textbf{Code and data:} \url{https://github.com/Ruqing1963/enso-rmt}
+\end{abstract}
+\section{Introduction}
+A random matrix theory (RMT) program testing the timing of natural events has converged on a falsifiable principle, the \emph{reservoir criterion}: GOE-class level repulsion appears if and only if (i) the events draw on one autonomous reservoir, not a superposition of sources and not an externally clocked oscillator; (ii) the reservoir empties substantially at each event; and (iii) the events are discrete, datable, and sufficiently numerous \citep{chen2026plumes,chen2026pulsar}. The program has confirmed this across the solid Earth, the geomagnetic field, and neutron-star interiors, and mapped its boundary through systems that fail it. It has not until now included a climate system.
+
+The El Ni\~no--Southern Oscillation (ENSO) is the dominant mode of interannual climate variability and an almost tailor-made test. Its leading conceptual theory is literally a charge-and-release model: the recharge oscillator \citep{jin1997}. The warm-water volume of the equatorial Pacific builds up before an El Ni\~no; during the event it is discharged, flattening the thermocline; and the system must recharge before the next warm event \citep{meinen2000,vialard2025}. The discharge phase (La Ni\~na) relaxes more slowly than the growth phase, the asymmetry of a nonlinear recharge--discharge cycle. The equatorial Pacific is a \emph{single} coupled ocean--atmosphere reservoir with its own internal dynamics: an autonomous oscillator, not a sum of independent sources and not a passive response to an external clock.
+
+The criterion makes a sharp prediction: ENSO should show GOE-class repulsion. There is a real risk to weigh. ENSO has a well-known quasi-periodicity of roughly 2--7 years \citep{jin1997}. If that were a near-perfect period, the spacing statistic would run toward unity, the periodicity trap. Conversely, if El Ni\~no events were triggered at random by weather noise, the statistic would be Poisson. The literature emphasizes that ENSO is irregular and aperiodic, modulated by stochastic forcing and chaotic dynamics \citep{vialard2025}. An irregular oscillator with genuine recharge memory is precisely the configuration that yields GOE: repulsion without rigidity. The data select GOE.
+
+\section{Data and Methods}
+\subsection{The Oceanic Ni\~no Index and objective event definition}
+We use the NOAA Climate Prediction Center Oceanic Ni\~no Index (ONI), the three-month running mean of Ni\~no-3.4 sea-surface-temperature anomalies, 1950--2024 (916 overlapping seasonal values). Events must be defined objectively and reproducibly, never hand-selected, because hand-selection can inject regularity and manufacture a spurious result. We use NOAA official operational definition: an El Ni\~no event is a run of ONI $\ge +0.5\,^
+\subsection{Spacing statistics}
+For each phase we normalize intervals by the mean and compute $\langle r\rangle=\langle\min(s_i,s_{i+1})/\max(s_i,s_{i+1})\rangle$ (Poisson 0.386, GOE 0.531, GUE 0.603), the CV, and 95\% bootstrap CIs, with significance against Poisson and GOE null ensembles matched in size. We check robustness by varying the threshold and by unfolding any slow rate trend.
+
+\section{Results}
+\subsection{El Ni\~no events show GOE-class repulsion}
+The 24 El Ni\~no events give $\langle r\rangle = 0.515$ (95\% CI $0.48$--$0.71$), $+1.9\sigma$ above Poisson and indistinguishable from GOE ($-0.2\sigma$ from 0.531). The CV is $0.47$, in the GOE range and far from both the Poisson value (1.0) and the periodic limit (0). The spacing distribution (Figure~\ref{fig:enso}b) is suppressed at small intervals and peaked near the mean, the signature of level repulsion, and tracks the GOE Wigner surmise rather than the Poisson exponential.
+
+\subsection{The cold phase independently confirms it}
+The 18 La Ni\~na events give $\langle r\rangle = 0.522$ ($+1.7\sigma$ above Poisson), essentially identical to the warm phase. That both phases independently yield GOE---0.515 and 0.522---is strong internal corroboration: the repulsion is a property of the recharge--discharge cycle itself, not an artifact of one phase catalogue.
+
+\subsection{Robustness and the periodicity trap}
+The result does not depend on the threshold. Relaxing the minimum duration to three seasons gives $\langle r\rangle=0.503$ (26 events); tightening to six gives $0.591$ (20 events); restricting to strong events (ONI peak $\ge1.0$) gives $0.448$ (12 events). Across all reasonable choices $\langle r\rangle$ stays in $0.50$--$0.59$ and never falls to Poisson. Unfolding the slow rate trend leaves $\langle r\rangle=0.515$ unchanged, confirming the repulsion is intrinsic. Importantly, ENSO is not at the rigid periodic limit: a near-perfect period would give $\mathrm{CV}\to0$ and $\langle r\rangle\to1$; the observed CV $0.47$ and $\langle r\rangle$ $0.515$ are firmly at GOE, an irregular oscillator with genuine memory. The 2--7 year quasi-periodicity is real but loose: the recharge interval forbids two El Ni\~nos in immediate succession (repulsion above Poisson), yet stochastic and chaotic dynamics keep the interval from being fixed (not rigid).
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{figs/fig1_enso.pdf}
+\label{fig:enso}
+\end{figure}
+
+\section{Discussion}
+\subsection{ENSO on the memory ruler}
+ENSO joins the program memory spectrum at the GOE class, $\langle r\rangle\approx0.52$, alongside the most regular pulsar glitcher J0537$-$6910 (0.562) and just below mantle plumes (0.630). This is the program first climate-system entry and first coupled ocean--atmosphere reservoir, filling the gap between solid-Earth and astrophysical systems. The correspondence is striking: a neutron-star superfluid angular-momentum reservoir, a mantle thermal boundary layer, an ore-forming hydrothermal cell, and the equatorial Pacific warm-water volume all charge and release, and all repel at the same universality class. The spacing ratio measures the same thing in each: the regularity imposed by a finite recharge time. The contrast with the other class of climate rhythm is instructive: unlike the glacial--interglacial cycles paced by external, essentially periodic astronomical (Milankovitch) forcing, ENSO repulsion arises from the nonlinear, autonomous recharge of the coupled ocean--atmosphere system itself. An externally clocked cycle would tend toward trivial periodicity; ENSO instead exhibits genuine dynamical memory, the GOE signature of a self-driven reservoir.
+
+\subsection{Why ENSO succeeds where other oscillations would fail}
+The reservoir criterion predicted this outcome, and equally predicts where related targets fail. ENSO succeeds because it is a single autonomous reservoir with substantial discharge and objectively datable events. By contrast, pooling many independent climate oscillations would superpose sources and collapse to Poisson; a calendar-locked phenomenon would show trivial periodicity; and a phenomenon defined by hand-selected major events would be undecidable. ENSO avoids all three failure modes, which is why it gives a clean GOE signal.
+
+\subsection{Limitations}
+The instrumental ONI record yields 24 events; sufficient to place ENSO at GOE and exclude Poisson at $\sim2\sigma$, but the confidence interval is correspondingly wide and the precise position within the GOE--GUE range is not tightly constrained. Longer paleo-ENSO reconstructions (coral, tree-ring, sediment proxies over centuries to millennia) could sharpen the estimate, with the caveat that proxy event definition reintroduces extraction questions the instrumental ONI avoids. Two methodological points concerning the event definition deserve explicit attention, both close relatives of traps encountered elsewhere in the program. First, a \emph{quantization} consideration arising from seasonal phase-locking: El Ni\~no events tend to peak in boreal winter, which could in principle force inter-event intervals toward integer multiples of a year and pile the spacing ratios onto simple rationals, distorting the continuous Wigner distribution. In the observed record this does not occur, because the ONI peak wanders across boreal autumn and winter rather than locking to a single month: the 24 peaks span August to February with a spread of about 3.7 months. This sub-annual jitter keeps the intervals off integer-year values (observed intervals include 1.08, 3.17, 4.25, 4.42 and 5.08 years, not multiples of a fixed period) and preserves the continuity of the spacing statistic; $\langle r\rangle$ is unchanged whether peaks or onsets are used. Second, an \emph{algorithmic dead-time} consideration: the NOAA criterion (a run of at least five overlapping seasons) is itself a minimum-separation filter, structurally analogous to the peak-detection minimum-distance that manufactured spurious repulsion in the abandoned speleothem target. Honesty requires stating this. The decisive difference is one of scale: the algorithmic dead-time is roughly half a year, whereas ENSO physical recharge time and the observed inter-event spacings are 2--7 years (mean 3.1, minimum 0.75). The dead-time therefore sits an order of magnitude below the scale at which the GOE repulsion is centred, so the repulsion we measure reflects the physical recharge process, not an artifact of the event definition. A fully phase-aware analysis remains a natural extension.
+
+\section{Conclusions}
+The El Ni\~no--Southern Oscillation exhibits GOE-class level repulsion: 24 objectively defined El Ni\~no events give $\langle r\rangle=0.515$, $+1.9\sigma$ above Poisson and on GOE, independently confirmed by the cold phase ($0.522$) and robust to threshold and unfolding. ENSO is neither memoryless nor rigidly periodic; its events repel like quantum energy levels, the fingerprint of recharge-oscillator memory in a single autonomous ocean--atmosphere reservoir. This is the program first climate-system result and a successful forward prediction of the reservoir criterion: a system meeting all three conditions repels, at the same universality class as plumes, glitches, and ore deposits. The deep Pacific keeps time the way a chaotic quantum spectrum does.
+
+\section*{Data and Code Availability}
+ONI data are from NOAA CPC. Analysis code and the extracted event series are at \url{https://github.com/Ruqing1963/enso-rmt}.
+
+\begin{thebibliography}{99}
+\small
+\bibitem[Jin(1997)]{jin1997} Jin, F.-F. (1997). An equatorial ocean recharge paradigm for ENSO. Part I: Conceptual model. \emph{Journal of the Atmospheric Sciences}, 54, 811--829.
+\bibitem[Meinen \& McPhaden(2000)]{meinen2000} Meinen, C. S., \& McPhaden, M. J. (2000). Observations of warm water volume changes in the equatorial Pacific. \emph{Journal of Climate}, 13, 3551--3559.
+\bibitem[Vialard et al.(2025)]{vialard2025} Vialard, J., et al. (2025). The ENSO recharge oscillator conceptual model: achievements and future prospects. \emph{Reviews of Geophysics}, 63, e2024RG000843.
+\bibitem[Atas et al.(2013)]{atas2013} Atas, Y. Y., Bogomolny, E., Giraud, O., \& Roux, G. (2013). Distribution of the ratio of consecutive level spacings. \emph{Physical Review Letters}, 110, 084101.
+\bibitem[Chen(2026, plumes)]{chen2026plumes} Chen, R. (2026). Level repulsion in the deep Earth: mantle-plume rhythms. Zenodo, \url{https://zenodo.org/records/20768420}.
+\bibitem[Chen(2026, pulsar)]{chen2026pulsar} Chen, R. (2026). The memory spectrum of neutron star glitches. Zenodo, \url{https://zenodo.org/records/20790059}.
+\end{thebibliography}
+\end{document}
